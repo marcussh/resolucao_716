@@ -1,0 +1,95 @@
+
+@media print{
+
+    @page {
+    size: auto;
+    margin:0.3cm;
+         }
+    body {
+      padding: 3%;
+    }
+  
+    /*Elementos da página WEB que são ocultados na página de impressão.*/
+    #barra-brasil, .container-header, .sobre, #menu-contexto, .footer-atalhos, #footer, #portal-footer, video, .separator {
+      display: none !important;
+    }
+   
+    /*Mostra o menu apenas na primeira página. Sem essa propriedade o menu se repete em todas as páginas de impressão.*/
+    
+    
+    /*Remove a formatação dos link's.*/
+    a, a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+      display:none !important;
+      }
+    
+    /*Formatação do título da página de impressão.*/
+    .rastro-navegacao{
+     
+      padding: 5% !important;
+      font-size: 30px !important;
+      text-align: center;
+    }
+  
+  
+    /*Definição de como é exibido os gráficos do qliksense.*/
+      .grafico-a-esquerda {
+         width: 100%;
+      -webkit-page-break-inside: avoid; 
+      page-break-inside: avoid; 
+      -webkit-display: contents;
+      display: contents;
+      position: static;
+     
+    }
+        
+    /*Classe do objeto (gráfico, tabela) do qliksense. */
+    .qvobject {
+      
+      -webkit-page-break-inside: avoid; 
+            page-break-inside: avoid; 
+    
+    }
+    
+  
+      .qv-inner-object {
+       
+      padding: 15px;
+     line-height: normal;
+        
+     
+  
+     
+    }
+    
+   
+    article.qv-object-treemap {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+      width: 100%;
+     
+    }
+  
+    article.qv-object-barchart {
+      display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+     
+    }
+    
+    article.qv-object-filterpane {
+      
+    }
+    
+    .menu-fixo {
+      position: static !important;
+      
+    }
+   
+  }
