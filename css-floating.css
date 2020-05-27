@@ -1,0 +1,105 @@
+
+
+/*Classe criada em 29/04/2020 
+	Permite que o cabeçalho da tabela permaneçam no topo ao rolar a página. 
+	É útil em tabelas grandes.
+	A classe 'celula-fixa' é utilizada em cada célula '<th>' da tag '<thead>'.
+	A posição é definida com sticky para que fique 'parada' na tela ao rolar a página. É necessário junto com o 'sticky'
+definir o 'top' para ficar no topo da página (ou outro lugar que julgar necessário). 
+	O height foi utilizado para aumentar o tamanho da célula. Não é obrigatória a sua utilização.
+*/
+.celula-fixa-linha1 {
+   position: sticky !important;
+   background-clip: padding-box;
+   top: 0px; 
+  height: 30px;
+  background-color: #ffffff; 
+  border-right:1px solid black;
+  border-top:1px solid black;
+  border-bottom: 1px solid black !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.celula-fixa {
+  
+   position: sticky !important;
+  background-clip: padding-box;
+  height: 30px;
+   top: 28px;
+   background-color: #FFFFFF;
+ 
+   box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.4);
+}
+
+.formata-tabela {
+  border-collapse: inherit;
+  border-left: 1px solid black;
+  
+}
+
+.formata-tabela hr {
+ display: none;
+  
+}
+
+.formata-tabela tr td {
+  
+}
+
+
+@supports (-ms-ime-align:auto) { 
+  
+  /*
+  td.celula-fixa-linha1.column0.s {
+  padding: 5px 0 0 0;
+    
+  }
+  */
+  .internas#content table .celula-fixa-linha1 {
+    padding: 5px 0 0 0;
+  }
+  
+  
+ 
+  
+  .celula-fixa {
+    
+    background-clip: padding-box;
+  }
+  
+  .formata-tabela .style2{
+    border-top: none !important;
+   
+  }
+  .formata-tabela .style133{
+    border-top: none !important;
+   
+  }
+
+  
+  .formata-tabela {
+   border-collapse: inherit;
+   
+ 
+}
+  
+  .formata-tabela hr {
+ 	display:block !important;
+    width: 100% !important;
+    margin: 0px;
+    padding:0px;
+    border: 0.5px solid black;
+}
+  
+  
+   .celula-fixa-linha1 { 
+     
+     background-clip: padding-box;
+   
+  }
+
+}
+
+
+/*Fim da classe */
