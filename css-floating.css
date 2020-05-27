@@ -6,82 +6,81 @@
 	definir o 'top' para ficar no topo da página (ou outro lugar que julgar necessário). 
 */
 
+
 /*Classe utilizada na primeira linha do cabeçalho da tabela.*/
+
 .celula-fixa-linha1 {
-  position: sticky !important;
-  top: 0px; 
-  height: 30px;
-  background-color: #ffffff; 
-  border-right:1px solid black;
-  border-top:1px solid black;
-  border-bottom: 1px solid black !important;
-  text-align: center;
-  font-weight: bold;
+    position: sticky !important;
+    top: 0px;
+    height: 30px;
+    background-color: #ffffff;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black !important;
+    text-align: center;
+    font-weight: bold;
 }
+
 
 /*Classe utilizada na segunda linha do cabeçalho da tabela*/
+
 .celula-fixa {
-  position: sticky !important;
-  height: 30px;
-  top: 28px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.4);
+    position: sticky !important;
+    height: 30px;
+    top: 28px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
 
+
 /*Classe utilizada para alterar a propriedade 'border-collapse' da tabela e fazer com que as linhas não fiquem grossas*/
+
 .formata-tabela {
- border-collapse: inherit;
- border-left: 1px solid black;
- 
+    border-collapse: inherit;
+    border-left: 1px solid black;
 }
+
 
 /*Classe para ocultar a tag '<hr>' do Chrome e do Firefox.
  A tag foi inserida para ser utilizada no Edge*/
+
 .formata-tabela hr {
-display: none;
- 
+    display: none;
 }
 
 
 /*Estilo específico para corrigir incompatibilidades no navegador Edge*/
-@supports (-ms-ime-align:auto) { 
- 
-/*Padding utilizado para ajustar a tag '<hr>' dentro da coluna da tabela*/
- .internas#content table .celula-fixa-linha1 {
-   padding: 5px 0 0 0;
- }
- 
-/*Utilização da propriedade 'background-clip' para que nenhum fundo seja desenhado abaixo da borda*/
- .celula-fixa {
-   background-clip: padding-box;
- }
- 
- /*Classe utilizada para remover estilo de colunas com a classe '.style2' na tabela*/
- .formata-tabela .style2{
-   border-top: none !important;
-  
- /*Classe utilizada para remover estilo de colunas com a classe '.style133' na tabela*/
- }
- .formata-tabela .style133{
-   border-top: none !important;
-  
- }
 
-/*Estilização da tag <'hr>' inserida dentro da coluna da tabela para 
+@supports (-ms-ime-align:auto) {
+    /*Padding utilizado para ajustar a tag '<hr>' dentro da coluna da tabela*/
+    .internas#content table .celula-fixa-linha1 {
+        padding: 5px 0 0 0;
+    }
+    /*Utilização da propriedade 'background-clip' para que nenhum fundo seja desenhado abaixo da borda*/
+    .celula-fixa {
+        background-clip: padding-box;
+    }
+    /*Classe utilizada para remover estilo de colunas com a classe '.style2' na tabela*/
+    .formata-tabela .style2 {
+        border-top: none !important;
+        /*Classe utilizada para remover estilo de colunas com a classe '.style133' na tabela*/
+    }
+    .formata-tabela .style133 {
+        border-top: none !important;
+    }
+    /*Estilização da tag <'hr>' inserida dentro da coluna da tabela para 
  criar a linha horizontal dividindo as linhas do cabeçalho.*/
- .formata-tabela hr {
-  display:block !important;
-   width: 100% !important;
-   margin: 0px;
-   padding:0px;
-   border: 0.5px solid black;
-} 
- 
- /*Utilização da propriedade 'background-clip' para que nenhum fundo seja desenhado abaixo da borda*/
- .celula-fixa-linha1 { 
-    background-clip: padding-box;
-  
- }   
+    .formata-tabela hr {
+        display: block !important;
+        width: 100% !important;
+        margin: 0px;
+        padding: 0px;
+        border: 0.5px solid black;
+    }
+    /*Utilização da propriedade 'background-clip' para que nenhum fundo seja desenhado abaixo da borda*/
+    .celula-fixa-linha1 {
+        background-clip: padding-box;
+    }
 }
 
 
