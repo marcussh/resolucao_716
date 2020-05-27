@@ -1,9 +1,9 @@
-
-/*Classe criada em 29/04/2020 utilizada na tabela da Resolução 716 de 2019 
+/*	Criação de elemento flutuante na tabela da Resolução 716 de 2019.
+	Data da criação: 29/04/2020
 	- Permite que o cabeçalho da tabela permaneça no topo ao rolar a página. 
 	- É útil em tabelas grandes.
 	- A posição é definida com sticky para que fique 'parada' na tela ao rolar a página. É necessário junto com o 'sticky'
-definir o 'top' para ficar no topo da página (ou outro lugar que julgar necessário). 
+	definir o 'top' para ficar no topo da página (ou outro lugar que julgar necessário). 
 */
 
 /*Classe utilizada na primeira linha do cabeçalho da tabela.*/
@@ -35,7 +35,8 @@ definir o 'top' para ficar no topo da página (ou outro lugar que julgar necess�
  
 }
 
-/*Classe para ocultar a tag '<hr>' do Chrome e do Firefox. Foi inserida para ser utilizada no Edge*/
+/*Classe para ocultar a tag '<hr>' do Chrome e do Firefox.
+ A tag foi inserida para ser utilizada no Edge*/
 .formata-tabela hr {
 display: none;
  
